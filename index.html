@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" media="only screen and (max-width:375px)" href="phone.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+</head>
+
+<body>
+  <div id="all">
+
+    <div id="images">
+      <img id="img-1" src="./images/bg-pattern-desktop.svg" alt="prespective-rect">
+      <img id="img-4" src="./images/bg-pattern-mobile.svg" alt="prespective-rect">
+      <img id="img-2" src="./images/illustration-box-desktop.svg" alt="@-icon">
+      <img id="img-3" src="./images/illustration-woman-online-desktop.svg" alt="woman-online-desktop">
+      <img id="img-5" src="./images/illustration-woman-online-mobile.svg" alt="woman-online-mobile">
+    </div>
+
+    <div id="FAQ-txts">
+      <h1>FAQ</h1>
+
+      <div id="btn-fa">
+        <div id="drop-down1" class="drop-down">
+          <button id="btn1" class="btn" onclick="btn1()">How many team members can I invite? <img id="rotate1" src="./images/icon-arrow-down.svg"
+              alt="arrow"></button>
+          <span id="drop-down-txt1" class="drop-down-txt">
+            You can invite up to 2 additional users on the Free plan.<br> There is no limit on
+            team members for the Premium plan.
+          </span>
+        </div>
+
+
+        <div id="drop-down2" class="drop-down">
+          <button id="btn2" class="btn" onclick="btn2()">What is the maximum file upload size?<img id="rotate2" src="./images/icon-arrow-down.svg"
+              alt="arrow"></button>
+          <span id="drop-down-txt2" class="drop-down-txt">No more than 2GB. All files in your account must fit your allotted storage
+            space.</span>
+        </div>
+
+
+        <div id="drop-down3" class="drop-down">
+          <button id="btn3" class="btn" onclick="btn3()">How do I reset my password?<img id="rotate3" src="./images/icon-arrow-down.svg"
+              alt="arrow"></button>
+          <span id="drop-down-txt3" class="drop-down-txt">
+            Click “Forgot password” from the login page or “Change password” 
+            from your profile page.A reset link will be<br> emailed to you.
+          </span>
+        </div>
+
+
+        <div id="drop-down4" class="drop-down">
+          <button id="btn4" class="btn" onclick="btn4()">Can I cancel my subscription?<img id="rotate4" src="./images/icon-arrow-down.svg"
+              alt="arrow"></button>
+          <span id="drop-down-txt4" class="drop-down-txt">Yes! Send us a message and we’ll process your request no questions asked.</span>
+        </div>
+
+
+        <div id="drop-down5" class="drop-down">
+          <button id="btn5" class="btn" onclick="btn5()">Do you provide additional support?<img id="rotate5" src="./images/icon-arrow-down.svg"
+              alt="arrow"></button>
+          <span id="drop-down-txt5" class="drop-down-txt">
+            Chat and email support is available 24/7.
+            Phone lines are open during normal business hours.
+          </span>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Erfan gharib</a>.
+      </div>
+    </div>
+    
+  </div>
+</body>
+
+<script>
+  function btn1() {
+    if (document.getElementById('drop-down-txt1').style.display != 'flex') {
+      document.getElementById('drop-down-txt1').style.display = 'flex'
+      document.getElementById('btn1').style.fontWeight = '700'
+      document.getElementById('drop-down1').style.height = '100px'
+      document.getElementById('rotate1').style.transform = 'rotate(180deg)';
+    }
+    else {
+      document.getElementById('drop-down-txt1').style.display = 'none'
+      document.getElementById('btn1').style.fontWeight = '400'
+      document.getElementById('drop-down1').style.height = '55px'
+      document.getElementById('rotate1').style.transform = 'rotate(360deg)';
+    }
+  }
+  function btn2() {
+    if (document.getElementById('drop-down-txt2').style.display != 'flex') {
+      document.getElementById('drop-down-txt2').style.display = 'flex'
+      document.getElementById('btn2').style.fontWeight = '700'
+      document.getElementById('drop-down2').style.height = '100px'
+      document.getElementById('rotate2').style.transform = 'rotate(180deg)';
+    }
+    else {
+      document.getElementById('drop-down-txt2').style.display = 'none'
+      document.getElementById('btn2').style.fontWeight = '400'
+      document.getElementById('drop-down2').style.height = '55px'
+      document.getElementById('rotate2').style.transform = 'rotate(360deg)';
+
+    }
+  }
+  function btn3() {
+    if (document.getElementById('drop-down-txt3').style.display != 'flex') {
+      document.getElementById('drop-down-txt3').style.display = 'flex'
+      document.getElementById('btn3').style.fontWeight = '700'
+      document.getElementById('drop-down3').style.height = '100px'
+      document.getElementById('rotate3').style.transform = 'rotate(180deg)';
+    }
+    else {
+      document.getElementById('drop-down-txt3').style.display = 'none'
+      document.getElementById('btn3').style.fontWeight = '400'
+      document.getElementById('drop-down3').style.height = '55px'
+      document.getElementById('rotate3').style.transform = 'rotate(360deg)';
+    }
+  }
+  function btn4() {
+    if (document.getElementById('drop-down-txt4').style.display != 'flex') {
+      document.getElementById('drop-down-txt4').style.display = 'flex'
+      document.getElementById('btn4').style.fontWeight = '700'
+      document.getElementById('drop-down4').style.height = '100px'
+      document.getElementById('rotate4').style.transform = 'rotate(180deg)';
+    }
+    else {
+      document.getElementById('drop-down-txt4').style.display = 'none'
+      document.getElementById('btn4').style.fontWeight = '400'
+      document.getElementById('drop-down4').style.height = '55px'
+      document.getElementById('rotate4').style.transform = 'rotate(360deg)';
+    }
+  }
+  function btn5() {
+    if (document.getElementById('drop-down-txt5').style.display != 'flex') {
+      document.getElementById('drop-down-txt5').style.display = 'flex'
+      document.getElementById('btn5').style.fontWeight = '700'
+      document.getElementById('drop-down5').style.height = '100px'
+      document.getElementById('rotate5').style.transform = 'rotate(180deg)';
+    }
+    else {
+      document.getElementById('drop-down-txt5').style.display = 'none'
+      document.getElementById('btn5').style.fontWeight = '400'
+      document.getElementById('drop-down5').style.height = '55px'
+      document.getElementById('rotate5').style.transform = 'rotate(360deg)';
+    }
+  }
+</script>
+
+</html>
